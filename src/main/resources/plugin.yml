@@ -1,0 +1,7 @@
+name: giorno-spider
+version: '${project.version}'
+main: giorno.spider.SpiderMain
+api-version: '1.20'
+commands:
+  spider:
+    usage: /<command> (limb count) (segment count)
