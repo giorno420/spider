@@ -50,7 +50,7 @@ public class Utilities {
     }
 
     public static void applyTransformationWithInterpolation(BlockDisplay entity, Transformation transformation) {
-        if (entity.getTransformation() != transformation) {
+        if (!entity.getTransformation().equals(transformation)) {
             entity.setTransformation(transformation);
             entity.setInterpolationDelay(0);
             Bukkit.broadcastMessage("applying interpolation transformation (check if spider moves)");
